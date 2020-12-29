@@ -1,0 +1,433 @@
+<html>
+    <head>
+        <title>Tehnology - BBC News</title>
+    
+        <style type="text/css">
+            
+            #topbar-container {
+              background-color: black;
+              height: 40px;
+              width:auto;
+            }
+            
+            #topbar {
+                width: 1300px ;
+                margin: 0 auto;
+                height: 100%;
+                background-color:black;
+                overflow: hidden;
+            }
+            
+           .topbar-section {
+                float:left;
+                border-left:1px #cccccc solid;
+                margin 0 auto;
+                height:100%;
+            }
+            
+            body {
+                margin:0;
+                padding:0;
+            }
+            
+            #logo {
+                height:50px;
+                width: 100px;
+                margin-bottom: 5px;
+                float:left;
+                margin-right: 10px;
+                
+            }
+            
+            #logo-div {
+                float:left;
+                border-left: 0px;
+                height: auto;
+            }
+            
+            #signin-image {
+                margin-right: 5px;
+                height: 41px;
+                float:left;
+            }
+            
+            .text {
+                font-family: sans-serif;
+                text-decoration: none;
+                position: relative;
+                top: 10px;
+                color: white;
+                font-size: 14px;
+                font-weight: bold;
+                padding: 15px 20px 20px 20px;
+            }
+            
+            .text:hover{
+                text-decoration: underline;
+            }
+            
+            #arrow {
+                width: 18px;
+                float: right;
+            }
+        
+            
+            #search-box {
+                background-color: white;
+                border:none;
+                font-weight: bold;
+                font-size:14px;
+                padding:5px;
+                margin: 10px 0px 5px 5px;
+                float: left;
+            }
+            
+            #magnifying-glass {
+                height:26px;
+                width: 35px;
+                margin-top: 10px;
+                margin-left: 0px;
+                float: left;
+            }
+            
+            .clear {
+                clear : both;
+            }
+            
+            #menu-bar-container {
+                border-top: 1px #CCCCCC solid;
+                background-color: brown;
+                width: 100%;
+                height: 70px;
+            }
+            
+            #menu-bar{
+                width: 1300px;
+                margin: 0 auto;
+            }
+            
+            #h1 {
+                color: white;
+                float: left;
+                margin: 0;
+                padding: 0;
+                font-size: 40px;
+                font-weight: normal;
+                padding-top: 15px;
+                margin-left: 5px;
+            }
+            
+            #local-news {
+                float: right;
+                border: 1px #BB4545 solid;
+                width: 190px;
+                padding: 5px 5px 0 10px;
+                margin: 13px 10px 0 0;
+                
+            }
+            
+            #local-news a {
+                padding-left: 16px;
+                color: white;
+                text-decoration: none;
+                font-size: 25px;
+                
+            }
+            
+            #local-news a:hover {
+                text-decoration: underline;
+            }
+             
+            #menu-bar-2-container {
+                background-color:darkred;
+                width: 100%;
+                height: 40px;
+            }
+            
+            #menu-bar-2 {
+                width: 1300px;
+                margin: 0 auto;
+                height: 100%
+            }
+            
+            #menu-bar-2 a {
+                color: white;
+                text-decoration: none;
+                padding: 0 10px;
+                border-right: 1px #BB4545 solid;
+                font-size: 17px;
+                position: relative;
+                top: 9px;
+                
+            }
+            
+            #menu-bar-2 a:hover {
+                
+                text-decoration: underline;
+                
+            }
+            
+            .no-border {
+                margin: 0;
+                border: none !important;
+            }
+            
+            #arrow2 {
+                position: relative;
+                top: 8px;
+                left: 0px;
+                height: 10px;
+                width: 13px;
+            }
+            
+            #page-container {
+                
+                width: 1300px;
+                margin: 0 auto;
+            }
+            
+            h2 {
+                font-weight: normal;
+                margin-top: 40px;
+                font-size: 20px;
+                border-bottom: 4px solid #a91717;
+                width: 100px;
+            }
+            
+            h3 a{
+                color: black;
+                font-size: 30px;
+                text-decoration: none;
+            }
+            
+            h3 a:hover {
+               color: #1167a8;
+            }
+            
+            #article-summary {
+                width: 50%;
+                color: #797878;
+                float:left;
+            }
+            
+            #summary {
+                font-size: 20px;    
+            }
+            
+            #article-hr {
+                border-top: 1px solid #a91717;
+                width:50px;
+            }
+            
+            #clock {
+                width: 20px;
+            }
+            
+            #nashville-image {
+                width: 48%;
+                margin-left: 3px;
+                
+            }
+            
+            #stats {
+                font-weight: bold;
+                color: #797878;
+            }
+            
+            #location {
+                color:black;
+                border-left: 2px #CCCCCC solid;
+                padding-left: 5px;
+            }
+            #links {
+                padding-left: 0;
+            }
+            
+            #links a{
+                text-decoration: none;
+                font-weight: bold;
+                color: black;
+                font-size: 20px;
+            }
+            
+            #links a:hover{
+                text-decoration: underline
+                color:darkblue;
+            }
+            
+            #article-container {
+                width:1300px;
+                border-right: 1px solid #cccccc;
+            }
+            
+            #sub-news-container {
+                width: 1300px;
+                display: flex;
+                flex-direction: row;
+            }
+            .small-news {
+                margin-top: 20px;
+                margin-left: 20px;
+                float:left;
+            }
+            .small-news img{
+                width: 400px;  
+            }
+            
+            .small-news a{
+                font-size: 20px;
+                font-weight: bold;
+                text-decoration: none;
+                color:black;
+                
+            }
+            
+            .small-news a:hover{
+                text-decoration: underline;
+                color:darkcyan;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="topbar-container">
+            <div id="topbar" >
+
+              <div id="logo-div"> 
+                  <img id="logo" src="images/bbc-logo.jpg">
+                </div>
+
+               <div class="topbar-section">
+                    <input type="image" id="signin-image" src="images/signin-image.PNG">
+                </div>
+
+                <div class="topbar-section"> <a href="" class="text" > Home </a> </div>
+
+                <div class="topbar-section"> <a href=""class="text" > News </a> </div>
+
+                <div class="topbar-section"> <a href="" class="text" > Reel </a> </div>
+
+                <div class="topbar-section"> <a href="" class="text" > Worklife </a> </div>
+
+                <div class="topbar-section"> <a href="" class="text" > Travel </a> </div>
+
+                <div class="topbar-section"> <a href="" class="text" > Future </a> </div>
+
+                <div class="topbar-section"> <a href="" class="text" > Culture </a> </div>
+
+                <div class="topbar-section"> <a href="" class="text" > Music </a> </div>
+
+                <div class="topbar-section"> <a href="" class="text" style="float:left padding-bottom: 10px"> More </a> <input type="image"  src="images/arrow.PNG" id="arrow"> </div>
+
+                 <div class="topbar-section"> 
+                    <input type="text" id="search-box" value="Search">
+                     <input type="image" src="images/search-icon.PNG" id="magnifying-glass">
+                 </div>
+
+            </div>
+        </div>
+        
+        <div class="clear"></div>
+        <div id="menu-bar-container">
+            <div id="menu-bar">
+                <h1 id="h1"> NEWS </h1>
+                <div id="local-news">
+                    <a href="">Find local news</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="clear"></div>
+        
+        <div id="menu-bar-2-container">
+            <div id="menu-bar-2">
+                <a href="">Home</a>
+                <a href="">UK</a>
+                <a href="">World</a>
+                <a href="">Business</a>
+                <a href="">Politics</a>
+                <a href="">Tech</a>
+                <a href="">Science</a>
+                <a href="">Health</a>
+                <a href="">Education</a>
+                <a href="">Entertainment & Arts</a>
+                <a href="">Video & Audio</a>
+                <a href="" class='no-border'>More </a>
+                <input type="image" src ='images/arrow2.PNG' id="arrow2">
+            </div>
+        </div>
+        
+        <div class="clear"></div>
+        
+        <div id="page-container">
+             <div id="main-article">
+                 
+                 <h2>Technology</h2>
+                 
+                 <div id="article-container">
+                    <img src="images/nashville-image.PNG" id='nashville-image'>
+                     <div id='article-summary'> 
+                         <h3> <a href=""> Nashville camper van explodes in 'international act'</a></h3>
+                         <p id="summary">The FBI is investigating the blast that left three people 
+                             <br>injured in the city on Christmas morning.</p>
+                         <p id='stats'> <img id='clock' src="images/clock.PNG"> 1h <span id ="location">US & Canada</span></p>
+                         <hr id="article-hr" align="left">
+                        
+                         <ul id="links">
+                             <li><a href="">New coronavirus variant: What do we know?</a></li><br> 
+                             <li><a href="">US imposes tests on UK airline passengers</a></li><br>
+                             <li><a href="" >How long should I self-isolate for?</a></li>
+                         </ul>
+                         
+                     </div>
+                 </div>
+                 </div>
+                  
+                 <div class="clear"></div>
+                 
+                 <div class='sub-news-container'>
+                     <div class="small-news">
+                        <img src="images/trump.PNG">
+                        <p><a href="">Trump fails to sign Covid bill into law</a></p>
+                         <p>Millions of Americans temporarily lose<br> unemployment benefits after the deadline for<br> signing passes</p>
+                         <p id='stats'> <img id='clock' src="images/clock.PNG"> 6h <span id ="location">US & Canada</span></p>
+                     </div>
+                      <div class="small-news">
+                        <img src="images/Nashville-blast.PNG">
+                        <p><a href="">Nashville blast 'probably suicide bombing'</a></p>
+                         <p>Investigators conduct DNA tests after human<br> remains are found and a house<br> is searched.</p>
+                         <p id='stats'> <img id='clock' src="images/clock.PNG"> 4h <span id ="location">US & Canada</span></p>
+                     </div>
+                      <div class="small-news">
+                        <img src="images/iranian-blizzard.PNG">
+                        <p><a href="">Climbers die in blizzards in Iraninan <br> mountains</a></p>
+                         <p>At least 10 climbers are killed and seven others<br> are missing in the Alborz mountains<br> near Tehran.</p>
+                         <p id='stats'> <img id='clock' src="images/clock.PNG"> 1h <span id ="location">Middle East</span></p>
+                     </div>
+                
+                    <div class="small-news">
+                        <img src="images/chinese-economy.PNG">
+                        <p><a href="" >Chinese economy 'to overtake US by 2028'</a></p>
+                         <p>A think tank says the pandemic has caused<br> economic momentum to shift further in <br>favour of Asia.</p>
+                         <p id='stats'> <img id='clock' src="images/clock.PNG"> 11h <span id ="location">China</span></p>
+                     </div>
+                      <div class="small-news">
+                        <img src="images/EU-countries-vaccination.PNG">
+                        <p><a href="" >EU countries begin mass vaccination</a></p>
+                         <p>Countries across the EU received thir first<br> shipments of the pfizer/BioNTech<br> Covid-19</p>
+                         <p id='stats'> <img id='clock' src="images/clock.PNG"> 8h <span id ="location">World</span></p>
+                     </div>
+                      
+                      <div class="small-news">
+                        <img src="images/Pompeii-fastfood.PNG">
+                        <p><a href="" >Pompeii 'fast food' counter to open to the <br>public</a></p>
+                         <p>Newly unveiled bright frescos are believed<br> to show the food that was<br> avaialble in the Roman city.</p>
+                         <p id='stats'> <img id='clock' src="images/clock.PNG"> 14h <span id ="location">Europe</span></p>
+                     </div>
+                 </div>     
+        </div>
+        
+       
+    
+    </body>
+</html>
